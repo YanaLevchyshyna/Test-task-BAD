@@ -1,13 +1,13 @@
 import fs from 'fs/promises';
 
-const fileContent = fs.readFile('./10m.txt', 'utf-8');
-console.log(fileContent);
+// const fileContent = fs.readFile('./constant/10m.txt', 'utf-8');
+// // console.log(fileContent);
 
 const func = async () => {
-  const filePath = './10m-copy.txt';
+  const filePath = './constant/10m.txt';
   const data = await fs.readFile(filePath, 'utf-8');
 
-  console.log(data);
+  //   console.log(data);
 
   const numbers = data.trim().split('\n').map(Number);
   console.log(numbers);
