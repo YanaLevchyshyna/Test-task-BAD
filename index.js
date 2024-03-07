@@ -41,8 +41,8 @@ const func = async () => {
   const endTime = performance.now();
   console.log('endTime', endTime);
 
-  const executionTime = endTime - startTime;
-  console.log('executionTime', executionTime, 'ms');
+  const executionTime = Math.round((endTime - startTime) / 1000);
+  console.log('executionTime', executionTime, 's');
 };
 
 func();
