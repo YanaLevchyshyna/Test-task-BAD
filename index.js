@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 
 const func = async () => {
-  const startTime = performance.now(); // Запам'ятовуємо час початку виконання
+  const startTime = performance.now(); // час початку виконання
   console.log('startTime', startTime);
 
   const filePath = './constant/10m.txt';
@@ -42,7 +42,7 @@ const func = async () => {
   console.log('endTime', endTime);
 
   const executionTime = Math.round((endTime - startTime) / 1000);
-  console.log('executionTime', executionTime, 's');
+  console.log('executionTime', executionTime, 's'); // 18 seconds
 };
 
 func();
